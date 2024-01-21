@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+	<h1>Index Page</h1>
+	<p>This is the index page.</p>
+	<iframe src="(20)cross-documentmessaging.html" title="Iframe Example"></iframe>
+	<script>
+		window.addEventListener("message", function(event) {
+			if (event.origin === 'https://destino1281.github.io/dallake.io/') {
+				window.location.href = event.data;
+			}
+		});
+	</script>
+</body>
+</html>
